@@ -17,3 +17,10 @@ async function submitHandler(evt) {
 }
 
 $("#submit").on("click", submitHandler);
+$("#remove").on("click", removeGif);
+
+
+function removeGif(evt) {
+  evt.preventDefault();
+  $("#gifs").empty();
+}
